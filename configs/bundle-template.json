@@ -1,0 +1,8 @@
+{
+  "schema": "llm-portfolio-bundle-v1",
+  "bundle_id": "replace-with-experiment-id",
+  "include": [
+    "README.md",
+    "LICENSE"
+  ]
+}
