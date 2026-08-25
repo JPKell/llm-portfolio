@@ -1,0 +1,7 @@
+{
+  "fixture": true,
+  "json_valid_rate": 0.95,
+  "general_regression_abs": 0.01,
+  "peak_vram_mib": 1234,
+  "generation_tokens_per_second": 42.0
+}

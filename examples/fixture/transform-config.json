@@ -1,0 +1,5 @@
+{
+  "operation": "synthetic_adapter_training",
+  "seed": 1234,
+  "fixture": true
+}

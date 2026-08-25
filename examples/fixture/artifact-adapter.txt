@@ -1,0 +1,1 @@
+synthetic adapter artifact for lineage validation

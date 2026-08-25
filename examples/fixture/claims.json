@@ -1,0 +1,23 @@
+{
+  "schema": "llm-portfolio-claims-v1",
+  "claims": [
+    {
+      "id": "fixture-regression-001",
+      "status": "demonstration",
+      "statement": "The synthetic fixture passes its configured JSON-validity threshold.",
+      "scope": "Tooling demonstration only; no model was evaluated.",
+      "evidence": [
+        {
+          "path": "examples/fixture/metrics.json",
+          "sha256": "37c1655ab6b18615c10b02b6ea6a2a09c826841406f4fd61525935e7e9dfaff1"
+        }
+      ]
+    },
+    {
+      "id": "future-case-study-001",
+      "status": "planned",
+      "statement": "A single-GPU adaptation/compression result will be added after independent audit.",
+      "evidence": []
+    }
+  ]
+}

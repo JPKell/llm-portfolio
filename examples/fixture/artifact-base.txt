@@ -1,0 +1,1 @@
+synthetic base artifact for lineage validation

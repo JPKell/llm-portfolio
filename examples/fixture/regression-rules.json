@@ -1,0 +1,23 @@
+{
+  "schema": "llm-portfolio-regression-v1",
+  "rules": [
+    {
+      "metric": "json_valid_rate",
+      "operator": "ge",
+      "threshold": 0.9,
+      "severity": "block"
+    },
+    {
+      "metric": "general_regression_abs",
+      "operator": "le",
+      "threshold": 0.02,
+      "severity": "block"
+    },
+    {
+      "metric": "peak_vram_mib",
+      "operator": "le",
+      "threshold": 14680,
+      "severity": "block"
+    }
+  ]
+}

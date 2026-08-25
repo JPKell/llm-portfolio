@@ -1,0 +1,13 @@
+{
+  "schema": "llm-portfolio-bundle-v1",
+  "bundle_id": "synthetic-fixture-v1",
+  "include": [
+    "README.md",
+    "LICENSE",
+    "examples/fixture/README.md",
+    "examples/fixture/lineage.json",
+    "examples/fixture/claims.json",
+    "examples/fixture/metrics.json",
+    "examples/fixture/regression-rules.json"
+  ]
+}

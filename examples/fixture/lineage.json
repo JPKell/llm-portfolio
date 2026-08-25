@@ -1,0 +1,47 @@
+{
+  "schema": "llm-portfolio-lineage-v1",
+  "nodes": [
+    {
+      "id": "fixture-base",
+      "kind": "synthetic-model",
+      "status": "completed",
+      "root": true,
+      "artifact": {
+        "path": "examples/fixture/artifact-base.txt",
+        "sha256": "d9a73a5b30b8dbd84afeeea96f89e634231cf796a46e5574d7a33d6866a062a0"
+      }
+    },
+    {
+      "id": "fixture-adapter",
+      "kind": "synthetic-adapter",
+      "status": "completed",
+      "artifact": {
+        "path": "examples/fixture/artifact-adapter.txt",
+        "sha256": "72976adaf9e68080681c036d4cc4c15fd3511c57c3a7886a3ac83f50aa404240"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "fixture-train",
+      "inputs": ["fixture-base"],
+      "output": "fixture-adapter",
+      "operation": "synthetic_adapter_training",
+      "status": "completed",
+      "tool": {
+        "name": "fixture-generator",
+        "revision": "1"
+      },
+      "config": {
+        "path": "examples/fixture/transform-config.json",
+        "sha256": "963fd29a8e0dffbbe58dd53a1cdc0ae6ca10351a53a59c761f8f5060b59b4881"
+      },
+      "evidence": [
+        {
+          "path": "examples/fixture/transform-log.json",
+          "sha256": "ad6c689a7753634b2878eaae7251164517dde3080cd5711dde5fc243060af334"
+        }
+      ]
+    }
+  ]
+}
