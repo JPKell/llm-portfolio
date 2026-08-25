@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jpkell-llm-portfolio"
+version = "0.1.0"
+description = "Evidence, lineage, regression, and release tooling for local-LLM experiments"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [{name = "JPKell"}]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+]
+dependencies = []
+
+[project.scripts]
+llm-portfolio = "llm_portfolio.cli:main"
+
+[project.urls]
+Repository = "https://github.com/JPKell/llm-portfolio"
+Issues = "https://github.com/JPKell/llm-portfolio/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
